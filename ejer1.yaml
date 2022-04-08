@@ -5,7 +5,6 @@ entrypoint: /bin/sh
 args:
 - '-c'
 - |
-echo "Hello world fichero 1" > fichero1
-echo "Comprobación Fichero 1"
+touch fichero1
 ls
 cat fichero1
