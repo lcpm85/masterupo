@@ -1,10 +1,4 @@
 steps:
 - name: "docker:alpine"
 id: "1"
-entrypoint: /bin/sh
-args:
-- '-c'
-- |
-touch fichero1
-ls
-cat fichero1
+args: ["touch" "fichero1"]
