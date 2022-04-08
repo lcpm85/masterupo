@@ -7,7 +7,6 @@ steps:
     touch fichero1
     ls -l
 
-steps:
 - name: "alpine"
   entrypoint: /bin/sh
   args:
