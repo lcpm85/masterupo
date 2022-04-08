@@ -5,7 +5,7 @@ steps:
   - '-c'
   - |
     touch fichero1
-    ls -d $PWD/*
+    ls -d $$PWD/*
 
 - name: "alpine"
   dir: "fichero"
@@ -14,4 +14,4 @@ steps:
   - '-c'
   - |
     touch fichero2
-    ls -d $PWD/*
+    ls -d $$PWD/*
