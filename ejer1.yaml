@@ -1,4 +1,3 @@
 steps:
-- name: "docker:alpine"
-id: "1"
-args: ["touch","fichero1"]
+- name: "alpine"
+  args: ["touch","fichero1"]
