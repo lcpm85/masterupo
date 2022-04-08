@@ -23,4 +23,4 @@ steps:
   args:
   - '-c'
   - |
-    find / -iname 'fichero.'
+    find / -iname 'fichero*'
