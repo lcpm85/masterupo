@@ -52,4 +52,4 @@ steps:
   args:
   - '-c'
   - |
-    find . -name ""fichero*""
+    find /* -name ""fichero*""
