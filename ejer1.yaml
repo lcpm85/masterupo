@@ -44,7 +44,7 @@ steps:
   - '-c'
   - |
     touch fichero4
-    ls -dr fichero* 
+    ls -d $$PWD/*
 
 - name: "alpine"
   dir: "/"
@@ -52,4 +52,4 @@ steps:
   args:
   - '-c'
   - |
-    ls -d $$PWD/*
+    find / -name ""fichero*""
