@@ -8,43 +8,9 @@ steps:
   - '-c'
   - |
     touch fichero1
-    ls -d $$PWD/*
-
-- name: "alpine"
-  volumes:
-    - name: "vol1"
-      path: "/ficherovolumen"
-  dir: "fichero"
-  entrypoint: /bin/sh
-  args:
-  - '-c'
-  - |
-    touch fichero2
-    ls -d $$PWD/*
-
-- name: "alpine"
-  volumes:
-    - name: "vol1"
-      path: "/ficherovolumen"
-  dir: "/fichero3"
-  entrypoint: /bin/sh
-  args:
-  - '-c'
-  - |
-    touch fichero3
-    ls -d $$PWD/*
-
-- name: "alpine"
-  volumes:
-    - name: "vol1"
-      path: "/ficherovolumen"
-  dir: "/ficherovolumen"
-  entrypoint: /bin/sh
-  args:
-  - '-c'
-  - |
-    touch fichero4
-    ls -d $$PWD/*
+    touch fichero/fichero2
+    touch /fichero/fichero3
+    touch /ficherovolumen/fichero4
 
 - name: "alpine"
   volumes:
