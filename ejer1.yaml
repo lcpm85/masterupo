@@ -25,3 +25,22 @@ steps:
     touch fichero3
     ls -d $$PWD/*
 
+- name: "alpine"
+  volumen:
+    - name: "vol1"
+      path: "/ficherovolumen"
+  dir: "/fichero4"
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+    touch fichero4
+    ls -d $$PWD/*
+
+- name: "alpine"
+  dir: "/"
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+    ls -d $$PWD/*
