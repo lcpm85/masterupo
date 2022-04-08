@@ -38,7 +38,7 @@ steps:
   volumes:
     - name: "vol1"
       path: "/ficherovolumen"
-  dir: "/fichero4"
+  dir: "/ficherovolumen"
   entrypoint: /bin/sh
   args:
   - '-c'
@@ -47,9 +47,12 @@ steps:
     ls -d $$PWD/*
 
 - name: "alpine"
+  volumes:
+    - name: "vol1"
+      path: "/ficherovolumen"
   dir: "/"
   entrypoint: /bin/sh
   args:
   - '-c'
   - |
-    find /* -name ""fichero*""
+    find / -name ""fichero*""
