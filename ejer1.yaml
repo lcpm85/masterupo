@@ -1,7 +1,8 @@
 steps:
 - name: "alpine"
-  args: ["touch","fichero1"]
-
-- name: "alpine"
-  args: ["ls"]
-
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+    touch fichero1
+    ls
