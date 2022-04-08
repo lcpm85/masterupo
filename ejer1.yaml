@@ -6,15 +6,6 @@ args:
 - '-c'
 - |
 echo "Hello world fichero 1" > fichero1
-echo "Hello world fichero 2" > fichero/fichero2
-echo "Hello world fichero 3" > /fichero/fichero3
 echo "Comprobación Fichero 1"
 ls
 cat fichero1
-echo "Comprobación Fichero 2"
-ls -R 
-cat fichero/fichero2
-echo "Comprobación Fichero 3"
-cd /fichero
-ls
-cat /fichero/fichero3
