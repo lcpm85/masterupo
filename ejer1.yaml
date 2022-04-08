@@ -13,6 +13,7 @@ steps:
     mkdir /fichero
     touch /fichero/fichero3
     touch /ficherovolumen/fichero4
+    find / -iname 'fichero*'
 
 - name: "alpine"
   volumes:
