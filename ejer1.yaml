@@ -26,7 +26,7 @@ steps:
     ls -d $$PWD/*
 
 - name: "alpine"
-  volumen:
+  volumes:
     - name: "vol1"
       path: "/ficherovolumen"
   dir: "/fichero4"
