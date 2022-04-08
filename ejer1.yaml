@@ -8,7 +8,9 @@ steps:
   - '-c'
   - |
     touch fichero1
+    mkdir fichero
     touch fichero/fichero2
+    mkdir /fichero
     touch /fichero/fichero3
     touch /ficherovolumen/fichero4
 
