@@ -5,4 +5,14 @@ steps:
   - '-c'
   - |
     touch fichero1
-    ls
+    ls -l
+
+steps:
+- name: "alpine"
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+    touch fichero2
+    ls -l
+  dir: "fichero"
