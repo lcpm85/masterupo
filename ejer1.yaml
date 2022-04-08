@@ -15,3 +15,13 @@ steps:
   - |
     touch fichero2
     ls -d $$PWD/*
+
+- name: "alpine"
+  dir: "/fichero3"
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+    touch fichero3
+    ls -d $$PWD/*
+
