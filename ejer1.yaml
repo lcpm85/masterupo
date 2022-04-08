@@ -1,6 +1,6 @@
 steps:
-- name: "emergya/alpine-node-build"
-id: "Sin Vol"
+- name: "docker:alpine"
+id: "1"
 entrypoint: /bin/sh
 args:
 - '-c'
