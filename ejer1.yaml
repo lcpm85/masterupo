@@ -1,3 +1,7 @@
 steps:
 - name: "alpine"
   args: ["touch","fichero1"]
+
+- name: "alpine"
+  args: ["ls"]
+
