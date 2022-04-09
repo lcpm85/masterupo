@@ -3,7 +3,7 @@ steps:
   - name: "gcr.io/kaniko-project/executor"
     args: ["--context","/workspace","--destination","europe-west1-docker.pkg.dev/$PROJECT_ID/clouddeploy/flaskapp:$COMMIT_SHA","--destination","europe-west1-docker.pkg.dev/$PROJECT_ID/clouddeploy/flaskapp:latest" ,"--dockerfile","/workspace/Dockerfile", "--cache"]
 
-  # Run api tests
+  # Run api testss
   #  - name: 'europe-west1-docker.pkg.dev/$PROJECT_ID/clouddeploy/flaskapp:${COMMIT_SHA}'
   #    entrypoint: python
   #    args: ["-m", "unittest"]
